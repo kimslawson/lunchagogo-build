@@ -1,0 +1,1 @@
+import{u as e}from"./B_7suSET.js";function t(t){return`${e}${t}`}var n=`${e}/img/logo.jpg`;export{t as n,n as t};
