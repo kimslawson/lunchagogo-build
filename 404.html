@@ -5,47 +5,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<meta name="theme-color" content="#ffbb18" />
 		<meta name="description" content="Lunch a Go-Go — find food trucks fast. Follow the food." />
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
-		<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
-		<link rel="manifest" href="/manifest.webmanifest" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/app/img/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/app/img/favicon-16x16.png" />
+		<link rel="apple-touch-icon" href="/app/img/apple-touch-icon.png" />
+		<link rel="manifest" href="/app/manifest.webmanifest" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-title" content="Lunch a Go-Go" />
 		<meta name="mobile-web-app-capable" content="yes" />
-		<meta http-equiv="content-security-policy" content="default-src 'self'; worker-src 'self'; connect-src 'self' https: wss:; font-src 'self' data:; img-src 'self' data: blob: https:; manifest-src 'self'; script-src 'self' 'sha256-EunyveEjWRUcm8naiHosqDDM3WQC90aB8qMiYN0mnwI='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'">
-		<link href="/_app/immutable/entry/start.CEfGF5ru.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/D0qDjoLx.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/BFS1pAYV.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/Dt-HX3Vu.js" rel="modulepreload">
-		<link href="/_app/immutable/entry/app.B_ICjxXw.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/HclGiUj8.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
-		<link href="/_app/immutable/nodes/0.DwuYJ9M6.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/BRhte3H_.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/pE7u8DLH.js" rel="modulepreload">
-		<link href="/_app/immutable/chunks/BakaH2Qd.js" rel="modulepreload">
+		<meta http-equiv="content-security-policy" content="default-src 'self'; worker-src 'self'; connect-src 'self' https: wss:; font-src 'self' data:; img-src 'self' data: blob: https:; manifest-src 'self'; script-src 'self' 'sha256-9BOA0q6g3UXcesd7tZ7RPG7haoEL0SmfcQlv4ZFApqE='; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'">
+		<link href="/app/_app/immutable/entry/start.B5I1pfFW.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/BM9-Erpa.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/BFS1pAYV.js" rel="modulepreload">
+		<link href="/app/_app/immutable/entry/app.CAEIZDpH.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/HclGiUj8.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/xihTtKlq.js" rel="modulepreload">
+		<link href="/app/_app/immutable/nodes/0.BskT3hwT.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/BRhte3H_.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/CMBKMMZm.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/BSTlojnX.js" rel="modulepreload">
+		<link href="/app/_app/immutable/chunks/ClD78HL8.js" rel="modulepreload">
 		
-		<link href="/_app/immutable/assets/0.CWRcrsHk.css" rel="stylesheet">
+		<link href="/app/_app/immutable/assets/0.CIIdd14S.css" rel="stylesheet">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_1yavxy5 = {
-						base: ""
+					__sveltekit_159qghk = {
+						base: "/app",
+						assets: "/app"
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/_app/immutable/entry/start.CEfGF5ru.js"),
-						import("/_app/immutable/entry/app.B_ICjxXw.js")
+						import("/app/_app/immutable/entry/start.B5I1pfFW.js"),
+						import("/app/_app/immutable/entry/app.CAEIZDpH.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
 
 					if ('serviceWorker' in navigator) {
-						const script_url = '/service-worker.js';
+						const script_url = '/app/service-worker.js';
 						const policy = globalThis?.window?.trustedTypes?.createPolicy(
 							'sveltekit-trusted-url',
 							{ createScriptURL(url) { return url; } }
