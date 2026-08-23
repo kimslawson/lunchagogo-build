@@ -4,21 +4,6 @@
 
   <head>
     <meta charset="utf-8">
-    <!-- If already signed in to the app, skip the splash and go straight to /app.
-         The app stores its Supabase session in this same origin's localStorage. -->
-    <script>
-      (function () {
-        try {
-          for (var i = 0; i < localStorage.length; i++) {
-            var k = localStorage.key(i);
-            if (k && /^sb-.*-auth-token$/.test(k) && localStorage.getItem(k)) {
-              location.replace('/app');
-              break;
-            }
-          }
-        } catch (e) {}
-      })();
-    </script>
     <title>Lunch a Go-Go</title>
     <meta name="description" content="Lunch a Go-Go connects food trucks and their followers. It's the app for foodies to track their favorite local mobile restaurants, hot dog stands, snack shacks, ice cream trucks, and more.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +32,6 @@
     <meta property="og:description" content="Lunch a Go-Go connects food trucks and their followers. It's the app for foodies to track their favorite local mobile restaurants, hot dog stands, snack shacks, ice cream trucks, and more.">
     <meta property="og:url" content="https://lunchagogo.app">
     <meta property="og:image" content="https://lunchagogo.app/img/og-image.jpg">
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="ad24cacd-4eee-4d74-aeba-675f0dd772e8"></script>
   </head>
 
   <body>
@@ -128,7 +112,7 @@
               </div>
               <div class="text form-group field-phone">
                 <label for="phone" class="text-label">Phone<span class="required">*</span></label>
-                <input type="tel" class="form-control" name="phone" value="+1" id="phone" required="required" aria-required="true" pattern="+1[^0-9]*[0-9]{3}[^0-9]*[0-9]{3}[^0-9]*[0-9]{4}" title="Enter a valid US or Canadian phone number">
+                <input type="tel" class="form-control" name="phone" value="+1" id="phone" required="required" aria-required="true" pattern="\+1[^0-9]*[0-9]{3}[^0-9]*[0-9]{3}[^0-9]*[0-9]{4}" title="Enter a valid US or Canadian phone number">
               </div>
               <div class="text form-group field-zip">
                 <label for="zip" class="text-label">ZIP Code</label>
@@ -143,7 +127,7 @@
       </section>
       <section class="footer section static" style="background: none; min-height: auto;">
         <p class="spacer">&nbsp;</p>
-        <p>© 2020&#x202f;&ndash;&#x202f;2026 Lunch a Go-Go
+        <p>© 2020&ndash;2022 Lunch a Go-Go
           <span class="dingus">
           <script type="text/javascript">
               var items = ['🪩', '🍔', '🍟', '🍕', '🌭', '🥪', '🌮', '🍦'];
