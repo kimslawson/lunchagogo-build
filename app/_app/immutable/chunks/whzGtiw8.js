@@ -1,0 +1,1 @@
+import{u as e}from"./CQz9m0_O.js";function t(t){return`${e}${t}`}var n=`${e}/img/logo.jpg`;export{t as n,n as t};
